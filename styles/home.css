@@ -1,0 +1,149 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+html {
+  min-height: 100vh;
+}
+
+body {
+  background-image: url("./aum3.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+
+  display: flex;
+  justify-content: center;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+.body-container {
+  width: 900px;
+  border: 2px solid black;
+  background-color: #d3d3d3;
+  height: fit-content;
+}
+
+.aum-logo {
+  width: 120px;
+  height: 120px;
+  background-color: white;
+  padding: 15px;
+  border-bottom: 2px solid black;
+  border-right: 2px solid black;
+}
+
+.header-section {
+  display: flex;
+}
+
+.header-section div {
+  width: 100%;
+}
+
+.header-section header {
+  background-image: linear-gradient(-150deg, #fe5f07 60%, white);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 85px;
+}
+
+.header-section header h2 {
+  font-size: 35px;
+}
+
+.header-section nav {
+  height: 30px;
+}
+
+.header-section ul {
+  display: flex;
+  color: white;
+  padding: 8px;
+  list-style: none;
+  justify-content: space-around;
+  background-color: black;
+}
+
+.header-section li {
+  cursor: pointer;
+  font-size: 16px;
+}
+a {
+  text-decoration: none;
+  color: white;
+}
+
+.header-section ul li:nth-child(1) a {
+  color: #fe5f07;
+}
+
+/* ====================== CONTENT SECTION =========================*/
+
+.content-section {
+  padding: 20px 0;
+  display: flex;
+}
+
+.left-content {
+  margin-right: 10px;
+  flex: 1;
+}
+
+.right-content {
+  margin-left: 10px;
+  flex: 1;
+}
+.center-line {
+  border-right: 2px double red;
+}
+
+.content-div {
+  padding: 10px;
+  border-top: 2px double black;
+  height: 140px;
+}
+
+.content-div:last-child {
+  border-bottom: 2px double black;
+}
+
+.content-div h2 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.content-div p {
+  text-align: justify;
+}
+
+/* ====================== FOOTER SECTION =========================*/
+
+footer {
+  background-color: #fe5f07;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  border-top: 2px solid black;
+}
+
+footer p {
+  font-size: 12px;
+  padding: 1px;
+}
+
+.footer-icons {
+  display: flex;
+}
+
+.footer-icons img {
+  height: 30px;
+  margin: 5px;
+}

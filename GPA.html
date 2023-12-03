@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Computer Science Department</title>
+    <link rel="stylesheet" href="styles/normalize.css" />
+    <link rel="stylesheet" href="styles/GPA.css" />
+    <script src="GPA.js"></script>
+  </head>
+  <body>
+    <div class="body-container">
+      <div class="header-section">
+        <img src="images/logo.png" class="aum-logo" />
+        <div>
+          <header>
+            <h2>Computer Science Department</h2>
+          </header>
+          <nav>
+            <ul>
+              <li><a href="./home.html">Home</a></li>
+              <li><a href="./description.html">Program Description</a></li>
+              <li><a href="./TA.html">TA Application</a></li>
+              <li><a href="./GPA.html">GPA Calculator</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+      <div class="content-section">
+        <div class="left-content">
+          <h2>Find your GPA!</h2>
+          <p>
+            Enter the number of credit hours for each course, and the letter
+            grade for each of them. At least 3 courses should be entered.
+          </p>
+
+          <div class="flex">
+            <h3>Credit Hours</h3>
+            <h3>Grade</h3>
+          </div>
+          <form id="gpaForm">
+            <label for="creditHours1">Course 1:</label>
+            <input type="number" id="creditHours1" min="0" required />
+
+            <input type="text" id="grade1" maxlength="1" required /><br />
+
+            <label for="creditHours2">Course 2:</label>
+            <input type="number" id="creditHours2" min="0" required />
+
+            <input type="text" id="grade2" maxlength="1" required /><br />
+
+            <label for="creditHours3">Course 3:</label>
+            <input type="number" id="creditHours3" min="0" required />
+
+            <input type="text" id="grade3" maxlength="1" required /><br />
+
+            <label for="creditHours4">Course 4:</label>
+            <input type="number" id="creditHours4" min="0" required />
+
+            <input type="text" id="grade4" maxlength="1" required /><br />
+
+            <label for="creditHours5">Course 5:</label>
+            <input type="number" id="creditHours5" min="0" required />
+
+            <input type="text" id="grade5" maxlength="1" required /><br />
+
+            <label for="avg-gpa">Avg GPA:</label>
+            <input type="number" id="avg-gpa" value="" disabled /><br />
+
+            <button
+              class="buttons margin-left"
+              type="button"
+              onclick="calculateGPA()"
+            >
+              Submit
+            </button>
+            <button class="buttons" type="reset">Reset</button>
+          </form>
+
+          <p id="result"></p>
+        </div>
+      </div>
+      <footer>
+        <div>
+          <p>7400 East Drive</p>
+          <p>Montgomery, AL 36117</p>
+          <p>Local: 334-244-3000</p>
+          <p>Toll-Free: 800-227-2649</p>
+        </div>
+        <div>
+          <p>&copy; 2022 Madhan Mohan Gangadhari</p>
+        </div>
+        <div class="footer-icons">
+          <img id="twt" src="images/twt.jpeg" />
+          <img src="images/pinterest-logo.png" />
+          <img id="fb" src="images/facebook-social-network-logo.png" />
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
